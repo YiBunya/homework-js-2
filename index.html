@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="">Username</label>
+        <input type="text" id="username">
+    </div>
+    <div style="margin-top: 20px;">
+        <label for="">Password</label>
+        <input type="password" id="password">
+    </div>
+    <button onclick="save()" style="margin: 30px 80px;">save</button>
+    <script>
+        function save(){
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var user = "admin";
+            var pass = "123";
+            if(username === user && password === pass){
+                alert("Login Success..!");
+            }
+            else{
+                alert("Invalid username or password...!");
+            }
+        }
+    </script>
+</body>
+</html>
